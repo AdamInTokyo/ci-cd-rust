@@ -12,5 +12,7 @@ jobs:
         with:
           toolchain: stable
           components: clippy, rustfmt
+      -name: Update Cargo Shorts
+        run: cargo update
       - name: Run clippy
         run: make lint
